@@ -1,9 +1,13 @@
+# file name : Stream_utilis.py
+# this file handles the real-time video streaming functionality
+# it defines the function , which takes and RTPS address or video file path as input and captures frmaes using OpenCV's VideoCapture
+
 import cv2
 import numpy as np
 import time
 from collections import deque
 
-# Define the width and height standards for the video stream
+# Defining the width and height standards for the video stream
 WIDTH_STANDARD = 640
 HEIGHT_STANDARD = 480
 

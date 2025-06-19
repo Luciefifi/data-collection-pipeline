@@ -1,3 +1,10 @@
+# file name : image_saver.py
+#This file manages periodic saving of images from the video stream. 
+# It defines two main functions: start_periodic_image_saving() and stop_periodic_image_saving(). 
+# When started, it launches a background thread that runs independently and continuously checks the frame_stack for the latest frame.
+#  Every few seconds , it captures the current frame, converts it from RGB to BGR format, and saves it as a .jpg image with a timestamped filename in the data/captured_images directory.
+#  The saving loop continues the stop button is clicked.
+
 import os
 import cv2
 import time
